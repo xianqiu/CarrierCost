@@ -1,0 +1,26 @@
+# CFP 1.0
+
+# 计费相关
+startPrice = 0  # 首重费用(物品在首重之内按此收费)
+afterPrice = 0  # 续重费用(超出首重的部分按每千克收取此费用)
+startWeight = 3  # 首重值
+volWeightParam = 6000  # 计抛参数
+minCost = 0  # 最小费用
+maxCost = INF  # 最大费用
+
+# 取整方式
+# 0: 不做任何处理
+# 1: 向上取整
+# -1: 向下取整
+# 2: 以0.5为单位向上取整
+# 3: 四舍五入
+weightRoundMeth = 2
+costRoundMeth = 0
+
+# 约束相关
+minWeight = 0  # 单个包裹的最小重量
+maxWeight = INF  # 单个包裹的最大重量
+minLength = 0  # 单个包裹的最小长度
+maxLength = INF  # 单个包裹的最大长度
+minVolume = 0  # 单个包裹的最小体积
+maxVolume = INF  # 单个包裹的最大体积
